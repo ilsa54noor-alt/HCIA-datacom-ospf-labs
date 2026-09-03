@@ -5,6 +5,19 @@ Configure a 3-router star topology (BR1 — HQ — BR2) using VLSM-sized
 subnets, with loopback interfaces simulating each site's LAN.
 
 Topology:
+https://github.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/blob/e0e32462786b17223f1dc8cfb38843a8d93ae0ab/Screenshot%202026-09-03%20020613.png
+
+BR1 config log:
+Screenshot 2026-09-03 054936.png
+BR2 config log:
+
+HQ config log:
+
+display ospf peer:
+
+display ip routing-table:
+
+ping 10.120.0.1:
 
 ## Problem 1: Mismatched WAN subnets
 Initially assigned WAN IPs from different /30 blocks on the two ends
