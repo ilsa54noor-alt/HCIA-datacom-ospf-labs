@@ -26,13 +26,6 @@ real configured mask.
 **Fix:** applied `ospf network-type broadcast` on all three loopbacks.
 Confirmed via `display ip routing-table` — masks now show correctly.
 
-## Problem 3: Ping test didn't actually prove connectivity
-Initial verification used `ping 10.120.0.1` run *from HQ itself* —
-this proves nothing, since a router can always reach its own
-interface regardless of whether OSPF or the links are working.
-**Fix:** re-ran the ping from BR1's prompt instead, targeting HQ's
-loopback — this actually proves cross-router, multi-hop reachability.
-
 ## Final Verification
 - `display ospf peer` on HQ — 2 neighbors, both Full state
 - `display ip routing-table` on HQ and BR1 — correct /26, /24, /27
