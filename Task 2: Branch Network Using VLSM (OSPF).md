@@ -5,24 +5,31 @@ Configure a 3-router star topology (BR1 — HQ — BR2) using VLSM-sized
 subnets, with loopback interfaces simulating each site's LAN.
 
 Topology:
+
 ![Topology diagram](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/e0e32462786b17223f1dc8cfb38843a8d93ae0ab/Screenshot%202026-09-03%20020613.png)
 
 BR1 config log:
+
 ![BR1 config log](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/c634e2db0cc1ceeb968f8d030cea81c53dd8a87f/Screenshot%202026-09-03%20054936.png)
 
 BR2 config log:
+
 ![BR2 config log](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/c634e2db0cc1ceeb968f8d030cea81c53dd8a87f/Screenshot%202026-09-03%20055254.png)
 
 HQ config log:
+
 ![HQ config log](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/c634e2db0cc1ceeb968f8d030cea81c53dd8a87f/Screenshot%202026-09-03%20055711.png)
 
 display ospf peer:
+
 ![OSPF peer table](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/c634e2db0cc1ceeb968f8d030cea81c53dd8a87f/Screenshot%202026-09-03%20060000.png)
 
 display ip routing-table:
+
 ![Routing table](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/c634e2db0cc1ceeb968f8d030cea81c53dd8a87f/Screenshot%202026-09-03%20055808.png)
 
 ping 10.120.0.1:
+
 ![Ping test](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/c634e2db0cc1ceeb968f8d030cea81c53dd8a87f/Screenshot%202026-09-03%20055922.png)
 
 ## Problem 1: Mismatched WAN subnets
