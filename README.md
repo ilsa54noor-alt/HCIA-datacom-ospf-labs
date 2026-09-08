@@ -6,10 +6,6 @@ VLSM subnetting, route summarization, OSPF cost manipulation, star
 and partial-mesh topologies, loopback advertisement, and a simulated
 ISP–enterprise edge with default-route injection.
 
-Each task folder includes full router configurations, the addressing
-plan and reasoning behind it, problems encountered during
-configuration and how they were resolved, and verification
-screenshots (OSPF neighbor tables, routing tables, ping tests).
 
 ## Tasks
 1. Basic Enterprise LAN–WAN (Single Area OSPF)
