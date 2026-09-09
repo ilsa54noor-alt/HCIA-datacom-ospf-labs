@@ -4,21 +4,28 @@ Task Info
 This showed me that OSPF doesn't pick paths by hop count — it uses cost, which by default is based on bandwidth. I set up two physical links between the same
 two routers and manually assigned different costs to each, to see OSPF prefer the lower-cost path even though both paths physically existed.
 
-Topology
-https://github.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/blob/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20140350.png
+Topology:
 
-R1 Config
-https://github.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/blob/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142523.png
+![Topology diagram](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20140350.png)
 
-R2 Config
-https://github.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/blob/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142653.png
+R1 Config:
 
-Verification
-display ip routing-table
-https://github.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/blob/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142740.png
+![R1 config log](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142523.png)
 
-display ospf peer
-https://github.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/blob/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142818.png
+R2 Config:
 
-ping 192.168.120.2
-https://github.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/blob/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20143030.png
+![R2 config log](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142653.png)
+
+Verification:
+
+display ip routing-table:
+
+![Routing table](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142740.png)
+
+display ospf peer:
+
+![OSPF peer table](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20142818.png)
+
+ping 192.168.120.2:
+
+![Ping test](https://raw.githubusercontent.com/ilsa54noor-alt/HCIA-datacom-ospf-labs/012058756fbaa548ded3e85e3b32f5aec3c44766/Screenshot%202026-09-07%20143030.png)
